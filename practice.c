@@ -1,15 +1,11 @@
-#include<stdio.h>
-
-void printAddress (int *n);
-
+#include <stdio.h>
 
 int main() {
-    int n = 4;
-    printf("%p\n", (void *)&n);
-    printAddress(&n);
-    return 0;
-}
+    int arr[2][2];
 
-void printAddress (int *n) {
-    printf ("%p\n", &n) ;
+    arr[0][0] = 90;
+
+    printf("%d", arr[0][0]);
+
+    return 0;
 }
